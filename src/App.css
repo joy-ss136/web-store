@@ -1,38 +1,219 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,800");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+  width: 50%;
+  height: 50%;
+  margin-bottom: 1rem;
+  margin-top: 2em;
+}
+html {
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pannel {
+  margin: auto;
+  /*padding: 10rem 10rem;*/
+  display: block;
+  /*border: 2px solid #60a9ff;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  /*border-radius: 10px;*/
+  /*min-height: 100%;*/
+  /* top/bottom left/right */
+  /*width: 100%;*/
+  max-width: 900px;
+  max-height: 900px;
+  vertical-align: middle;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.single {
+  border: 3px solid hsl(208, 49%, 79%);
+  border-radius: 10px;
+  width: 250px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  /* take the automatic spacing out*/
+  float: left;
+  margin: 1.66%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  text-transform: uppercase;
+}
+.topBar {
+  background-color: #60a9ff;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.counter {
+  font-family: "Raleway", san-serif;
+  font-weight: bold;
   color: white;
+  margin: center;
+  font-size: 23px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 20px;
+  /* space between the element and the spacing is padding*/
+  padding-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.price {
+  color: #888;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #e1f1ff;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+  border-bottom: 1px solid #e1f1ff;
+}
+button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #348efe;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px 0;
+  transition: background-color 200ms ease-in-out;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  /*top right bottom left*/
+  margin: 10px 5px 13px 5px;
+}
+.Addbtn:hover,
+.Delbtn:hover,
+Addbtn:focus,
+.Delbtn:focus {
+  background-color: #e1f1ff;
 }
